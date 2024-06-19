@@ -1,0 +1,47 @@
+.home {
+  position: relative;
+}
+
+.toolbar {
+  position: fixed;
+  top: 50%;
+  left: 5rem;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 60%;
+  min-height: 600px;
+  background: rgb(24, 24, 26);
+  border-radius: 10px;
+  z-index: 3;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    &:active {
+      filter: brightness(50%);
+    }
+  }
+
+  .colorPicker {
+    position: absolute;
+    top: 40;
+    left: 6rem;
+    z-index: 1000;
+  }
+}
+
+.underline {
+  width: 2rem;
+  border-bottom: 3px solid white;
+}
+
+.grid {
+  width: 3000px;
+  height: 3000px;
+}
